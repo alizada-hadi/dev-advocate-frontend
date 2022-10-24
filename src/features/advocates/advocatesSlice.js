@@ -9,9 +9,9 @@ const initialState = {
 
 export const fetchAdvocates = createAsyncThunk(
   "advocates/fetched",
-  async (thunkAPI) => {
+  async (query, thunkAPI) => {
     try {
-      return await advocatesService.fetchAdvocates();
+      return await advocatesService.fetchAdvocates(query);
     } catch (error) {
       console.log(error);
     }
