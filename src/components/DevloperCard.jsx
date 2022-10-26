@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const DevloperCard = ({ advocate }) => {
   return (
-    <Link to={"/"}>
+    <Link to={`/${advocate?.username}`}>
       <div className="border-2 rounded hover:shadow-md bg-white">
         <div className="flex px-3 py-2">
           <img

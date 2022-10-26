@@ -14,8 +14,6 @@ const Home = () => {
 
   const query = location.search;
 
-  console.log(query);
-
   useEffect(() => {
     dispatch(fetchAdvocates(query));
   }, [dispatch, query]);
@@ -28,17 +26,12 @@ const Home = () => {
         <Search />
       </div>
       <div className="mx-8 md:mx-16 lg:mx-24 xl:mx-32">
-        <div className="grid overflow-hidden grid-cols-7 gap-2">
-          <div className="box col-span-2">
-            <h1 className="mt-8 text-2xl font-semibold font-Inter text-slate-800 capitalize">
-              Most followed developers
-            </h1>
-          </div>
-          <div className="box col-span-5 mt-8 mb-24">
+        <div className="grid overflow-hidden gap-2">
+          <div className=" mt-8 mb-24">
             {status === "loading" ? (
               <Spinner />
             ) : (
-              <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
+              <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-4">
                 {advocates?.advocates?.map((advocate, index) => (
                   <DevloperCard key={index} advocate={advocate} />
                 ))}
