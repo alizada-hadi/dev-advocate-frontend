@@ -17,7 +17,7 @@ const Header = () => {
           <ul className="hidden md:flex flex-col p-4 mt-4 items-center bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li className="">
               <Link
-                to="#"
+                to="/"
                 className="py-2 pr-4 pl-3 text-lg font-Inter flex items-center text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                 aria-current="page"
               >
