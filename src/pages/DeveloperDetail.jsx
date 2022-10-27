@@ -42,7 +42,7 @@ const DeveloperDetail = () => {
                 target="_blank"
               >
                 <FiTwitter className="text-2xl mr-2" />
-                {advocate?.advocate.username}
+                {advocate?.advocate?.username}
               </a>
             </div>
             <p className="mb-8 text-justify mx-12 text-lg">
